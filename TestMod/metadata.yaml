@@ -2,3 +2,9 @@
 ver: 0.1
 name: Test mod
 desc: This is a test mod.
+
+includesConfigOverrides: false
+includesConfigEdits: false
+includesLibraries: true
+includesLocalizationEdits: false
+includesLocalizations: false

@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace TestMod
 {
-    public class ModEntry : ModLink
+    public class ModEntry : PhantomBrigade.Mods.ModLink
     {
         public override void OnLoad(Harmony harmonyInstance)
         {
-            Debug.Log($" {metadata.id} dir: {metadata.directory} path: {metadata.path}");
+            Debug.Log($"----- {metadata.id} dir: {metadata.directory} path: {metadata.path}");
 
             Logger.Log("test log direct");
         }
