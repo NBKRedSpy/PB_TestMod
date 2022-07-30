@@ -76,6 +76,10 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /y "$(TargetDir)" "%25HOMEDRIVE%25%25HOMEPATH%25\Documents\My Games\Phantom Brigade\Mods\$(ProjectName)\"</PostBuildEvent>
+    <PostBuildEvent>set ModDir=%25HOMEDRIVE%25%25HOMEPATH%25\Documents\My Games\Phantom Brigade\Mods\
+echo "%25ModDir%25$(ProjectName)\"
+
+robocopy /xc /xn /xo . "%25ModDir%25$(ProjectName)" "metadata.yaml"
+xcopy /y $(TargetPath) "%25ModDir%25$(ProjectName)\Libraries\"</PostBuildEvent>
   </PropertyGroup>
 </Project>

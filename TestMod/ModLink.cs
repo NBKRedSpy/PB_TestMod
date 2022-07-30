@@ -13,9 +13,11 @@ namespace TestMod
     {
         public override void OnLoad(Harmony harmonyInstance)
         {
+            Logger.Log("test log direct");
+
             Debug.Log($"----- {metadata.id} dir: {metadata.directory} path: {metadata.path}");
 
-            Logger.Log("test log direct");
+            
         }
     }
 }
