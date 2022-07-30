@@ -2,6 +2,8 @@
 ver: 0.1
 name: Test mod
 desc: This is a test mod.
+gameVersionMin:
+gameVersionMax:
 includesConfigOverrides: false
 includesConfigEdits: false
 includesLibraries: true
