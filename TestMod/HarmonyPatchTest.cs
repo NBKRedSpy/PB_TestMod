@@ -14,7 +14,7 @@ namespace TestMod
         public static void Prefix()
         {
             Debug.Log("Harmony patch executed");
-            
+            Logger.Log("Harmony test log direct");
 
         }
     }

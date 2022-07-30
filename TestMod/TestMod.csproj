@@ -76,6 +76,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /y "$(TargetDir)" "C:\Users\Boss\Documents\My Games\Phantom Brigade\Mods\$(ProjectName)\"</PostBuildEvent>
+    <PostBuildEvent>xcopy /y "$(TargetDir)" "%25HOMEDRIVE%25%25HOMEPATH%25\Documents\My Games\Phantom Brigade\Mods\$(ProjectName)\"</PostBuildEvent>
   </PropertyGroup>
 </Project>
